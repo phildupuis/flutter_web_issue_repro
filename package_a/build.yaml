@@ -1,0 +1,17 @@
+targets:
+  $default:
+    builders:
+      built_value_generator|built_value:
+        enabled: true
+        generate_for:
+          exclude:
+            - test/**
+          include:
+            - lib/**
+      build_web_compilers|entrypoint:
+        generate_for:
+          - test/**_test.dart
+          - web/**.dart
+        options:
+          compiler: dartdevc
+        enabled: true

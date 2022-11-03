@@ -1,0 +1,21 @@
+name: package_b
+description: A starting point for Dart libraries or applications.
+version: 1.0.0
+publish_to: none
+# homepage: https://www.example.com
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+dependencies:
+  built_value: ^8.4.1
+
+  package_a:
+    path: ../package_a
+
+dev_dependencies:
+  build_runner: ^2.3.0
+  built_value_generator: ^8.4.1
+  build_web_compilers: ^3.2.1
+  lints: ^2.0.0
+  test: ^1.16.0
