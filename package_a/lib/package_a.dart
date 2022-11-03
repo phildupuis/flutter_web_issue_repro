@@ -4,5 +4,4 @@
 library package_a;
 
 export 'src/package_a_base.dart';
-
-// TODO: Export any libraries intended for clients of this package.
+export 'src/serializers.dart';
