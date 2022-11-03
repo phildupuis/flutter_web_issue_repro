@@ -11,11 +11,9 @@ class Page3 extends StatelessWidget {
   Widget build(BuildContext context) {
     var awesomeB = AwesomeB();
 
-    print('!!!! 1');
     var buildValueB = BuildValueB((builder) => builder.b = 'dsfsdf');
-    print('!!!! 2');
     var serialize = bSerializers.serialize(buildValueB);
-    print('!!!! 3 $serialize');
+    print('$serialize');
 
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
