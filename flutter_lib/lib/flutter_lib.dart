@@ -2,6 +2,7 @@ library flutter_lib;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:package_a/package_a.dart' as a;
 import 'package:package_b/package_b.dart';
 
 class Page3 extends StatelessWidget {
@@ -14,7 +15,7 @@ class Page3 extends StatelessWidget {
     print('!!!! 1');
     var buildValueB = BuildValueB((builder) => builder.b = 'dsfsdf');
     print('!!!! 2');
-    var serialize = bSerializers.serialize(buildValueB);
+    var serialize = a.bSerializers.serialize(buildValueB);
     print('!!!! 3 $serialize');
 
     return Column(
